@@ -2,6 +2,12 @@
 
 module.exports = function(environment) {
   var ENV = {
+    firebase: {
+      apiKey: 'AIzaSyCagLLf_CZhjMEmRVFx26-4HHV7hteWOWA',
+      authDomain: 'superrentals-7323e.firebaseapp.com',
+      databaseURL: 'https://superrentals-7323e.firebaseio.com',
+      storageBucket: 'superrentals-7323e.appspot.com',
+    },
     modulePrefix: 'super-rentals',
     environment: environment,
     baseURL: '/',
