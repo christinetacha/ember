@@ -1,0 +1,12 @@
+<h1> Welcome to {{model.name}} </h1>
+
+{{city-detail city=model destroyCity='destroyCity'}}
+
+<h2>Rentals In {{model.name}}</h2>
+{{#each model.rentals as |rental|}}
+  {{rental-tile rental=rental destroyRental="destroyRental"}}
+{{/each}}
+
+{{new-rental save2="save3" city=model}}
+
+{{#link-to "index"}}<h2>Home</h2>{{/link-to}}
